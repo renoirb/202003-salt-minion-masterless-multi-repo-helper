@@ -1,0 +1,13 @@
+projects:
+  projects:
+    source/element-ui:
+      origin: "https://github.com/ElemeFE/element.git"
+      branch: dev
+    source/element-interview-questions:
+      origin: "https://github.com/ElemeFE/node-interview.git"
+    # https://www.njleonzhang.com/vue-data-tables/#/en-us/
+    source/vuetify:
+      origin: "https://github.com/vuetifyjs/vuetify.git"
+    source/vue-next:
+      origin: "https://github.com/vuejs/vue-next.git"
+
