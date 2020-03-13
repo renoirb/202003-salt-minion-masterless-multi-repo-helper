@@ -14,15 +14,23 @@ cli:
 salt-versions-report:
 	docker run -it --rm renoirb/salt-multi-repo-helper --versions-report
 
-.PHONY: pillar-items
-pillar-items:
+.PHONY: pillar
+pillar:
 	docker run -it --rm renoirb/salt-multi-repo-helper salt-minion pillar.items
 
-.PHONY: grain-items
-grain-items:
+.PHONY: grain
+grain:
 	docker run -it --rm renoirb/salt-multi-repo-helper salt-minion grain.items
 
 .PHONY: projects
 projects:
 	docker run -it --rm renoirb/salt-multi-repo-helper salt-call projects.names
+
+.PHONY: update
+update:
+	docker run -it --rm renoirb/salt-multi-repo-helper salt-call state.apply projects.update
+
+.PHONY: fetch
+fetch:
+	docker run -it --rm renoirb/salt-multi-repo-helper salt-call projects.fetch
 

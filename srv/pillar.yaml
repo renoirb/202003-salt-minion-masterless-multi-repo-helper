@@ -1,4 +1,8 @@
 projects:
+  lookup:
+    root_dir: /multi-repo/projects/
+    ssh_key: /multi-repo/.ssh/id_rsa
+    ssh_key_pub: /multi-repo/.ssh/id_rsa.pub
   projects:
     source/element-ui:
       origin: "https://github.com/ElemeFE/element.git"
